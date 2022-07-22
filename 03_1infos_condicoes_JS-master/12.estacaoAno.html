@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    //PROBLEMA
+    Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
+    De acordo com as respostas, informe qual a estação do ano correspondente.
+    */
+
+    //ENTRADA
+    const hemisferio = prompt("Informe o hemisfério (Sul - Norte): ").toLowerCase()
+    const mes = prompt("Informe o mês atual: ").toLowerCase()
+
+    //PROCESSAMENTO
+    if (hemisferio == 'sul'){
+        if (mes == 'janeiro' || mes == 'fevereiro' || mes == 'março'){  document.write("Inverno.")
+        }else if (mes == 'abril' || mes == 'maio' || mes == 'junho'){   document.write("Primavera.")
+        }else if (mes == 'julho' || mes == 'agosto' || mes == 'setembro'){  document.write("Verão.")
+        }else if (mes == 'outubro' || mes == 'novembro' || mes == 'dezembro'){  document.write("Outono.")
+        }else{  document.write("Estação não valida.")}
+    }else if (hemisferio == 'norte'){
+        if (mes == 'julho' || mes == 'agosto' || mes == 'setembro'){  document.write("Verão.")
+        }else if (mes == 'outubro' || mes == 'novembro' || mes == 'dezembro'){   document.write("Outono.")
+        }else if (mes == 'janeiro' || mes == 'fevereiro' || mes == 'março'){  document.write("Inverno.")
+        }else if (mes == 'abril' || mes == 'maio' || mes == 'junho'){  document.write("Primavera.")
+        }else{  document.write("Estação não valida")}
+    }else{  document.write("Hemisfério não é valido.")}
+    
+    //SAÍDA
+
+
+</script>
